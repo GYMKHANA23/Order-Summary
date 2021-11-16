@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url("/order-summary-component-main/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  top: 2rem;
+  margin: auto;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.lady-box {
+  background-color: white;
+  height: 550px;
+  width: 50%;
+  border-radius: 26px;
+  overflow: hidden;
+}
+.lady-box .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  max-height: 50%;
+}
+.lady-box .content .main-text {
+  text-align: center;
+  padding: 1rem;
+  line-height: 22px;
+  margin-top: 2rem;
+}
+.lady-box .content .main-text h1 {
+  font-weight: 900;
+  font-style: normal;
+}
+.lady-box .content .main-text p {
+  padding: 1rem 0.2rem;
+}
+
+.lady-box .content .sub-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+.lady-box .content .sub-text img {
+  height: 40px;
+}
+body > section > div > div > div.content > div.sub-text > p {
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+.lady-box .content .sub-text .txt {
+  margin-right: 5rem;
+  padding: 0rem 1rem;
+}
+.lady-box .content .buttons {
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.lady-box .content .buttons .btn1 {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 12px;
+  width: 280px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+}
+body > section > div > div > div.content > div.buttons > button.btn2 {
+  margin: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.lady-box .bg-image {
+  height: 200px;
+  width: 100%;
+  background-image: url("/order-summary-component-main/images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-device-width: 1280px) and (min-device-width: 1024px) {
+  .container {
+    position: absolute;
+    margin-left: 10rem;
+  }
+
+  .sub-container {
+    width: 100%;
+  }
+
+  .lady-box {
+    width: 60%;
+    height: 50%;
+  }
+  .lady-box .content .buttons {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) {
+  .container {
+    position: absolute;
+    top: 5%;
+  }
+  .sub-container {
+    width: 100%;
+  }
+
+  .lady-box {
+    width: 60%;
+    height: 50%;
+  }
+  .lady-box .content .buttons {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+  .container {
+    position: absolute;
+    top: 5%;
+  }
+  .sub-container {
+    width: 100%;
+  }
+
+  .lady-box {
+    width: 60%;
+    height: 50%;
+  }
+  .lady-box .content .buttons {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px) {
+  .container {
+    position: absolute;
+    top: 2%;
+  }
+  .sub-container {
+    width: 100%;
+  }
+
+  .lady-box {
+    width: 90%;
+    height: 50%;
+  }
+  .lady-box .content .buttons {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    position: absolute;
+    top: 1%;
+  }
+  .sub-container {
+    width: 100%;
+  }
+
+  .lady-box {
+    width: 100%;
+    height: 10%;
+  }
+  .lady-box .content .buttons {
+    margin-top: 2rem;
+  }
+}
