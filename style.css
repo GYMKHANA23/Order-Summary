@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background: url("/order-summary-component-main/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  top: 2rem;
+  z-index: 999;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lady-box {
+  background-color: white;
+  height: 550px;
+  max-width: 440px;
+  border-radius: 26px;
+  overflow: hidden;
+}
+.lady-box .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  max-height: 50%;
+}
+.lady-box .bg-image {
+  height: 200px;
+  width: 100%;
+  background-image: url("/order-summary-component-main/images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lady-box .content .main-text {
+  text-align: center;
+  line-height: 22px;
+  margin-top: 2rem;
+}
+.lady-box .content .main-text h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 25px;
+}
+.lady-box .content .main-text p {
+  color: #7c7c7c;
+  padding: 1rem 4rem;
+  font-weight: 500;
+}
+
+.sub-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 1rem;
+}
+.sub-text h4 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.sub-text p {
+  color: #7c7c7c;
+  font-weight: 500;
+  padding-top: 1px;
+}
+
+.sub-text .change {
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sub-text .change:hover {
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+.lady-box .content .sub-text .txt {
+  margin-right: 4rem;
+  padding: 0rem 1rem;
+}
+
+.lady-box .content .sub-text img {
+  height: 40px;
+}
+
+.lady-box .content .buttons {
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.buttons .btn1 {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 12px;
+  width: 300px;
+  max-width: 300px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+.buttons .btn1:hover {
+  background-color: hsla(245, 75%, 52%, 0.733);
+}
+
+body > section > div > div > div.content > div.buttons > button.btn2 {
+  margin: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+body > section > div > div > div.content > div.buttons > button.btn2:hover {
+  color: hsl(0, 0%, 15%);
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .lady-box {
+    width: 90%;
+  }
+
+  .lady-box .content .sub-text img {
+    height: 40px;
+    margin-right: 0rem;
+  }
+  .lady-box .content .main-text {
+    padding-top: 20px;
+  }
+
+  .lady-box .content .main-text h1 {
+    font-size: 22px;
+  }
+
+  .lady-box .content .main-text p {
+    padding: 1rem 3rem;
+  }
+
+  .sub-text {
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .lady-box .content .sub-text .txt {
+    margin-right: 2rem;
+    padding: 0rem 1rem;
+  }
+  .sub-text .change {
+    font-size: 13.5px;
+  }
+  .attribution a {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .lady-box {
+    width: 95%;
+  }
+
+  .lady-box .content .main-text p {
+    padding: 1rem 2rem;
+  }
+  .lady-box .content .sub-text .txt {
+    margin-right: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .sub-text {
+    width: 75%;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .sub-text .change {
+    font-size: 12.5px;
+  }
+
+  .buttons .btn1 {
+    width: 250px;
+    max-width: 250px;
+  }
+
+  .attribution a {
+    font-size: 8px;
+  }
+}
